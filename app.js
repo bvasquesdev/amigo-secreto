@@ -1,5 +1,5 @@
 let amigos = [];
-let sorteio = {};
+
 
 function adicionarAmigo(){
     let input = document.getElementById("amigo");
