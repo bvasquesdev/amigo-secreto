@@ -57,4 +57,14 @@ let sorteados;
         resultadoLista.innerHTML = "";
     
     
-  
+    amigos.forEach(p => {
+        let li = document.createElement("li");
+        let button = document.createElement("button");
+        button.textContent = `Ver quem ${p} tirou`;
+        button.onclick = function(){
+            alert(`${p} tirou ${sorteio[p]}!`);
+        };
+        li.appendChild(button);
+        resultadoLista.appendChild(li);
+    })
+}
